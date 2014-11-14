@@ -37,6 +37,7 @@ service mysqld start
 
 # 5 Configure Python 2.7
 mkdir -p /data/python
+cd /data/python
 wget http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tar.xz
 yum install xz-libs -y
 yum install bzip2-devel mercurial ncurses-devel openssl-devel python-argparse python-tools python-setuptools readline-devel sqlite-devel tk-devel zlib-devel -y
