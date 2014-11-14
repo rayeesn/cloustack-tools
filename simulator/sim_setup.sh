@@ -47,18 +47,12 @@ cd Python-2.7.6
 ./configure --prefix=/usr/local --enable-unicode=ucs4 --enable-shared LDFLAGS="-Wl,-rpath /usr/local/lib"
 make && make altinstall
 
-# Let's build (compile) the source
-make
-
-# After building everything:
-make altinstall
-
 
 # 6 Configure Env
 echo export M2_HOME=/usr/local/apache-maven-3.2.3 >> ~/.bashrc
 echo export M2=/usr/local/apache-maven-3.2.3/bin >> ~/.bashrc
 echo export PATH=/usr/local/apache-maven-3.2.3/bin:/data/python/Python-2.7.6:$PATH >> ~/.bashrc
-echo export JAVA_HOME="/usr/lib/java/jdk1.6.0_24" >> ~/.bashrc
+#echo export JAVA_HOME="/usr/lib/java/jdk1.6.0_24" >> ~/.bashrc
 source ~/.bashrc
 
 
